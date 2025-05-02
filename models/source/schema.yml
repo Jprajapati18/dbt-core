@@ -6,4 +6,5 @@ sources:
     schema: TPCH_SF1
       # Use your actual schema name
     tables:
-      - name: NATION
+      - name: CUSTOMER
+      - name: ORDERS

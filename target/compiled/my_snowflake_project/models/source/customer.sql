@@ -1,4 +1,3 @@
-
 /*
     Welcome to your first dbt model!
     Did you know that you can also configure models directly within SQL files?
@@ -7,9 +6,10 @@
     Try changing "table" to "view" below
 */
 
-{{ config(materialized='table') }}
 
-select * from {{ source('raw', 'NATION') }}
+
+
+select C_CUSTKEY,C_NAME,C_ADDRESS from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.CUSTOMER
 
 /*
     Uncomment the line below to remove records with null `id` values

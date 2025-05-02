@@ -1,0 +1,12 @@
+
+  
+    
+
+        create or replace transient table PC_DBT_DB.SOURCE.ORDERS
+         as
+        (
+
+select O_ORDERKEY,O_CUSTKEY,O_ORDERSTATUS from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.ORDERS
+        );
+      
+  

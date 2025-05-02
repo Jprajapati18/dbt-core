@@ -1,12 +1,15 @@
 
+  create or replace   view PC_DBT_DB.public.part_clone
   
+   as (
     
 
-        create or replace transient table PC_DBT_DB.SNOWFLAKE_SAMPLE_DATA_PUBLIC.part_clone
-         as
-        (
 
-select * from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.PART
-        );
-      
-  
+with source as (
+    select * from PC_DBT_DB.SNOWFLAKE_SAMPLE_DATA.my_first_dbt_model
+)
+select N_NATIONKEY as col1,
+       N_NAME as col2
+       from source
+  );
+
