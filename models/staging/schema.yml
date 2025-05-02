@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: stage
+    database: SNOWFLAKE_SAMPLE_DATA  # Use your actual database name
+    schema: TPCH_SF1
+      # Use your actual schema name
+    tables:
+      - name: PART

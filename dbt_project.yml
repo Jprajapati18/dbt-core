@@ -34,3 +34,12 @@ models:
     # Config indicated by + and applies to all files under models/example/
     example:
       +materialized: view
+
+    staging:
+      +database: PC_DBT_DB
+      +schema: PUBLIC
+      +materialized: view
+    marts:
+      +database: PC_DBT_DB
+      +schema: PUBLIC
+      +materialized: view
