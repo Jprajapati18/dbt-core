@@ -1,0 +1,14 @@
+my_snowflake_project:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: TMMBEIV-DZ81978  # e.g., xy12345.us-east-1
+      user: JPRAJAPATI
+      password: Jpraja@1801$$$    # Consider using environment variables
+      role: ACCOUNTADMIN           # e.g., ACCOUNTADMIN, ANALYST
+      database: PC_DBT_DB
+      warehouse: pc_dbt_wh_large
+      schema: SNOWFLAKE_SAMPLE_DATA
+      threads: 2
+      client_session_keep_alive: True

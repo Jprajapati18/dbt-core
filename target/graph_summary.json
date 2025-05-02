@@ -1,0 +1,1 @@
+{"_invocation_id": "5fdeb425-84c4-4f35-b16b-2a42da5e8437", "linked": {"0": {"name": "source.my_snowflake_project.raw.NATION", "type": "source", "succ": [1]}, "1": {"name": "model.my_snowflake_project.my_first_dbt_model", "type": "model"}}}
